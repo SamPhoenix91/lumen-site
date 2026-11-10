@@ -33,14 +33,16 @@
         <h2>What Lumen stores</h2>
         <h3>Sign-ins</h3>
         <p>Sign-ins for the servers and services you add (such as Plex, Jellyfin, Emby, IPTV providers, Radarr and Sonarr) are kept in your device's Keychain. If you turn on iCloud Sync, they are also stored in your own iCloud account using CloudKit's end-to-end encrypted fields, so they can be restored on your other devices. They are never stored in plain iCloud key-value storage and never sent anywhere else.</p>
-        <h3>Settings and progress</h3>
-        <p>Your settings, profiles and similar preferences are stored on your device. With iCloud Sync on, they are kept in your own iCloud account; with Local Network Sync on, they are shared directly between your own devices on your local network.</p>
+        <h3>Settings and profiles</h3>
+        <p>Your settings, profiles and similar preferences are stored on your device. With iCloud Sync on, they are kept in your own iCloud account. With Local Network Sync on, they are shared directly between your own devices on your local network. Every message is encrypted with AES-256 using a key that only your paired devices hold.</p>
+        <h3>Watch history</h3>
+        <p>How far you've got in each title is saved on your device, per profile, and sent back to your own Plex, Jellyfin or Emby server. Positions the server missed (for example, because it was offline) are sent the next time Lumen connects. Your other devices pick up your progress from the same server.</p>
 
         <h2>Where your data goes</h2>
         <ul>
           <li>Your media requests, watch progress and sign-ins go <strong>only to the servers and providers you add</strong>, such as your Plex, Jellyfin or Emby server, Plex's own sign-in and Discover service (plex.tv), your IPTV provider, and your Radarr or Sonarr.</li>
           <li>iCloud Sync uses your own iCloud account, under Apple's privacy policy.</li>
-          <li>Local Network Sync, Play On and Watch Together talk directly to your other devices running Lumen on your local network.</li>
+          <li>Local Network Sync, Play On and Watch Together talk directly to your other devices running Lumen on your local network, encrypted end to end.</li>
           <li>Lumen does not include advertising, analytics or tracking SDKs, and it does not sell or share your data.</li>
         </ul>
 
@@ -56,7 +58,7 @@
         <p>Lumen can use your device's name (for example "Bedroom Apple TV") so you can tell your devices apart. The device name is:</p>
         <ul>
           <li><strong>Shown only to you</strong>, in the list of your own devices (Settings &gt; Sync) and in the player's Play On and Watch Together menus.</li>
-          <li><strong>Sent only over your local network</strong>, directly between your own devices.</li>
+          <li><strong>Sent only over your local network</strong>, encrypted and directly between your own devices.</li>
           <li><strong>Never sent</strong> to any server, cloud service, analytics service or third party.</li>
         </ul>
 
