@@ -120,7 +120,7 @@ section .sub { color: var(--muted); margin: 0 0 32px; max-width: 760px; }
 .shots { display: grid; gap: 16px; grid-template-columns: 1fr; }
 @media (min-width: 720px) { .shots { grid-template-columns: repeat(2, 1fr); } }
 .shots figure { margin: 0; }
-.shots img { width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--card-border); display: block; }
+.shots img { max-width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--card-border); display: block; }
 .shots figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; }
 .empty { color: var(--muted); padding: 40px 22px; text-align: center; }
 
