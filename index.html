@@ -50,7 +50,7 @@
         <h2>What Lumen is</h2>
         <p class="sub">Plex is the default and drives Home. Jellyfin and Emby servers sit alongside it, and IPTV adds live channels and an on-demand library you browse yourself. Everything plays through Apple's own player, with AetherEngine stepping in for formats Apple's player can't open.</p>
         <div class="grid three">
-          <div class="card"><h3><span class="dot c1"></span>Your servers</h3><p>Plex, Jellyfin and Emby, side by side. Lumen only ever communicates with your media servers, iCloud and your other Lumen players.</p></div>
+          <div class="card"><h3><span class="dot c1"></span>Your servers</h3><p>Plex, Jellyfin and Emby, side by side. Lumen talks only to your servers, iCloud and your own devices, with a title-only lookup for subtitles and skip times.</p></div>
           <div class="card"><h3><span class="dot c4"></span>Apple's player</h3><p>Native playback with the controls you know, and AetherEngine as a fallback for everything else.</p></div>
           <div class="card"><h3><span class="dot c5"></span>Every screen</h3><p>One app, the same layout and settings on Apple TV, iPhone and iPad.</p></div>
         </div>
@@ -89,6 +89,7 @@
           <li><strong>Sign-ins stay with you.</strong> Server and provider sign-ins are kept in your device's Keychain. With iCloud Sync on, they're also stored in CloudKit's end-to-end encrypted fields, and nowhere else.</li>
           <li><strong>No analytics, no tracking.</strong> Lumen doesn't collect usage data and has no accounts of its own.</li>
           <li><strong>Only your servers.</strong> Your media and sign-ins go only to the servers and providers you add.</li>
+          <li><strong>Lookups know the title, not you.</strong> To find subtitles and intro timings, Lumen sends only the title's IMDb ID (with season and episode numbers for a TV episode). It never sends your account, sign-ins, file names or library.</li>
           <li><strong>Device name.</strong> Shown only to you, in the list of your own devices (Settings &gt; Sync) and in the player's Play On and Watch Together menus. It's sent only over your local network, directly between your own devices, and never to any server, cloud service, analytics or third party.</li>
         </ul>
       </div>

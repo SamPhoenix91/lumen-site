@@ -38,10 +38,19 @@
 
         <h2>Where your data goes</h2>
         <ul>
-          <li>Your media requests, watch progress and sign-ins go <strong>only to the servers and providers you add</strong>, such as your Plex, Jellyfin or Emby server, your IPTV provider, and your Radarr or Sonarr.</li>
+          <li>Your media requests, watch progress and sign-ins go <strong>only to the servers and providers you add</strong>, such as your Plex, Jellyfin or Emby server, Plex's own sign-in and Discover service (plex.tv), your IPTV provider, and your Radarr or Sonarr.</li>
           <li>iCloud Sync uses your own iCloud account, under Apple's privacy policy.</li>
+          <li>Local Network Sync, Play On and Watch Together talk directly to your other devices running Lumen on your local network.</li>
           <li>Lumen does not include advertising, analytics or tracking SDKs, and it does not sell or share your data.</li>
         </ul>
+
+        <h2>Subtitle and skip-intro lookups</h2>
+        <p>Two community services help with the extras, and both know only the title, never you:</p>
+        <ul>
+          <li><strong>Online subtitles</strong> come from the OpenSubtitles add-on run by Stremio (opensubtitles-v3.strem.io).</li>
+          <li><strong>Intro, recap and credits timings</strong> come from IntroDB (api.introdb.app).</li>
+        </ul>
+        <p>For each lookup, Lumen sends only the title's IMDb ID, with season and episode numbers for a TV episode. It never sends your account, sign-ins, file names or library. As with any web request, these services can see your device's IP address.</p>
 
         <h2>Device name</h2>
         <p>Lumen can use your device's name (for example "Bedroom Apple TV") so you can tell your devices apart. The device name is:</p>
